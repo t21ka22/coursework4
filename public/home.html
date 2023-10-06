@@ -1,0 +1,204 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      
+    </style>
+    <title>Time with Kofi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+     <script defer src="https://kit.fontawesome.com/cb0b82e2e3.js" crossorigin="anonymous"></script>
+     <script defer src="js/index.js"></script> 
+  </head>
+  <body style="display:flex; flex-direction: column; align-items:center, justify-content:center"> 
+
+    <div class="topnav">
+      <a class="active" href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="chat.html">Chat</a>
+      <div style="margin-left:1250px"class="d-flex flex-row">
+      <a href="https://x.com/kooboateng1?s=11" class=""><i class="fa-brands fa-twitter"></i></a>
+      <a href="" class=""><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+
+    <div>
+      <h1 style="font-size:20;color:black;font-family: cursive;text-align: center">welcome to the world of Kofi</h1>
+      <div class="slideshow-container " style="display:block;">
+      <div class="mySlides text-center">
+      <img src="img/kab.jpeg" style="width:70%">
+      <div class="text"><h4 style="color:black;">This is Kofi Agyenim Boateng, a postgraduate student (MSc Information Technology)</h4></div>
+      
+    </div>
+    <div class="mySlides text-center">
+      <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/F6E3/production/_97630236_aberdeenresultuni.jpg" style="width:80%">
+      <div class="text"><h4 style="color:black;">A proud student of University of Aberdeen</h4></div>
+    </div>
+    <div class="mySlides text-center">
+      <img src="https://resources.careers.hawkeye.pulselive.com/photo-resources/2021/05/11/b93b5250-f160-4812-81e4-869df6b63d6e/Hawk-Eye-Careers-Site-Images_Landscape-19.png?width=871&height=648" style="width:70%">
+      <div class="text"><h4 style="color:black;">Stadium system operation is where I see myself after school</h4></div>
+    </div>
+    <div>
+      <a style="background-color:black;" class="prev" onclick="plusSlides(-1)">❮</a>
+      <a style="background-color:rgba(0, 0, 0, 0.89);" class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+    <div class="d-flex flex-row";text-align:center>
+    <div>
+      <i style="font-size:50px;padding-left:60px" class="fa-solid fa-video fa-2xl"></i>
+      <h4 style="color:blue;padding-left:16px">Content Creator</h4>
+    </div>
+
+    <div>
+      <i style="font-size:40px;padding-left:70px" <i class="fa-solid fa-code fa-2xl"></i>
+      <h4 style="color:blue;padding-left:16px">Web Designer</h4>
+    </div>
+    </div>
+    
+    <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary d-flex justify-content-center text-center"> 
+        
+    <div class="col-lg-6 px-0">
+        <h1 style="font-size:80;color:black;font-family: cursive;text-align: center">Blog</h1>
+        <img src="https://datasportsgroup.com/images/news/83465.png" style="width:80%">
+      <h1 class="display-4 fst-italic">How Is Artificial Intelligence Being Used in Football?</h1>
+      <p class="lead my-3">In recent years, data analytics has been transforming football. It’s changed the way that clubs scout opponents, find new signings, and improve player performance. Now another big change is on the way: the rise of artificial intelligence.</p>
+      <p class="lead mb-0"><button id="read-more1" type="submit" class="btn btn-secondary text-body-emphasis fw-bold">Continue reading...</button></p>
+      <p id="para1" class="hidden">The growing amount of football data has created the perfect environment for machine learning. AI can be trained to spot patterns in the data that might otherwise be overlooked by humans. It can also help automate processes to make them quicker and more accurate. In fact, it’s already being used in ways you might not expect.
+
+How AI Is Being Used to Collect Football Player Data
+
+Analytics has helped pave the way for the rise of AI. A vast amount of data is now collected in football with thousands of data points recorded for each match. The type of data being collected has also become more complex. 
+
+Only a few years ago, football data was almost entirely event data about what players did with the ball, such as the number of passes, tackles or shots. This data was collected by trained analysts who would watch video footage of a match, either during the game or afterwards, and record each event as it happened.
+
+Focusing on event data is limited. It tells you what happened to the ball, but it doesn’t give you the full picture of what all 22 players are doing at any given moment. That’s where tracking data comes in. Cameras around the stadium now record the movements and actions of every player on the pitch, providing a much fuller picture of each match.
+
+AI plays a crucial role in gathering tracking data. Computers have been trained to detect and track each player as they move about the pitch. With the constant movement of players, and the fact that other players can get in the way of a camera angle, this skill is more advanced than you might think. It’s an impressive feat and allows complex tracking data to be gathered in real time, recording player positions in much more detail than a human analyst could.
+
+How Referees Are Using AI to Make Better Decisions
+
+Refereeing decisions have long been one of the most controversial areas of the game. When a bad decision costs a team in a crucial match, it lives long in the memory. Just think of how fans still talk about Diego Maradona’s handball goal for Argentina against England in 1986. VAR has been an important step towards making better decisions, but FIFA is keen to make refereering even more accurate. To this end, they have started to use AI to assist match officials. 
+
+Semi-Automated Offside Technology (SAOT) is a new system that uses 12 cameras around the stadium to track the position of the ball and each player 50 times per second. A sensor placed in the match ball records the exact moment when it is kicked. 
+
+When the system detects an offside, it sends an alert to the VAR officials. They can then check the video footage to confirm whether or not it is offside. They don’t have to accept the SAOT’s decision, but it can help make them aware of offsides they may have missed and allows them to monitor the position of the players when the ball is kicked much more accurately.
+
+The system has been used in the 2022-23 Champions League group stage and at the 2022 World Cup with success. It looks like it is here to stay and is likely to be rolled out further. SAOT hasn’t replaced the decision-making of referees, but it’s quickly become a valuable tool, giving them the precise information that they can use to make the right call.
+
+How Football Clubs Use AI to Keep Players Fit
+
+The packed schedules of modern players, especially those who face the combined demands of domestic, continental and international competitions, make it more important than ever to monitor fitness and spot any injury risks early. This has made player fitness one of the areas where AI has first had an impact in football.
+
+Zone7 is an American data company that uses AI to help players maximise their performance levels while avoiding injury. One of their clients, Los Angeles FC, was crowned MLS champions in 2022. The platform helped keep the team in optimum condition, including reducing injuries per game played by 17%.
+
+Zone7 use AI to analyse data and detect patterns that reveal when players are getting injured and what is causing these injuries “They retrospectively analysed the data we gave from the previous season – all our GPS data, force platform data, injury data, etc,” revealed Gavin Benjafield, LAFC’s Performance Director.  “Through that exercise they could tell us, ‘Here are some of the most sensitive markers that were flagging at the time X player, or players, is sustaining most of their preventable injuries.’”
+
+Demand for Zone7’s services is growing. Other clubs that now use the platform include Napoli in Italy’s Serie A and Leeds United and Liverpool in the English Premier League.
+
+How Liverpool Have Been Collaborating with DeepMind
+
+Since their takeover by the Fenway Sports Group in 2010, Liverpool have been at the forefront of data analytics in football. Their world-leading data department includes data scientists with PhDs from Harvard and Cambridge University. Its insights and innovations have helped manager Jürgen Klopp put together a team that has won both the Premier League and the Champions League.
+
+Despite this success, those working at Liverpool have wanted to go further and push the boundaries of what it’s possible to do with football data. This led to them working with DeepMind, an artificial intelligence company and research laboratory owned by Google.
+
+The partnership allowed the club access to advanced AI that was previously beyond their reach.  “Liverpool has got one of the biggest and most-developed analytics departments in football, and we don’t have anything like the resources that we need to build these models ourselves,” says Ian Graham, the club’s Director of Research. The collaboration was helped by the fact that Demis Hassabis, DeepMind’s founder, is a big Liverpool fan.
+
+The Anfield club handed DeepMind data on every one of their Premier League games between 2017 and 2019 and experts from the two organisations worked together to find ways AI could use the data to support the work of coaches and players. The eventual result was the publication of a joint research paper in 2021. 
+
+One of the key findings of the paper was that AI could be used to predict how players in a specific team would react in different situations. This has the potential to transform opposition analysis, as it would allow a team to test how a team would react to particular tactics. The analysts and the coaching team would be able to test several different ideas before the game to find out which strategy would be the most effective to use.
+
+Professor Karl Tuyls, part of the research team, has spoken about what he sees as the future of AI in performance analysis: “I don’t think you will see big impacts in the next six months or a year, but in the next five years some of the tools will be more developed, and you could see something like an ‘Automated Video Assistant Coach’ that can help with pre and post-match analysis, or can look at the first half of a game and give you advice on what could be changed in the second half.”
+
+AI is unlikely to replace the role of performance and recruitment analysts in the game, but it does offer them a powerful new tool. Machine learning has the potential to make analysis more detailed, accurate, and insightful. It’s the next stage of the data revolution. </p>
+    </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary-emphasis"> Football World</strong>
+          <img src="https://assets-webp.khelnow.com/news/uploads/2022/08/Offside_7-August.jpg.webp?imwidth=1920" style="width:80%">
+          <h3 class="mb-0">How semi-automated offside technology will revolutionize football?</h3>
+          <div class="mb-1 text-body-secondary">Oct 5</div>
+          <p class="card-text mb-auto">FIFA has been tweaking and testing a lot of technologies in the last few years. In our rapidly evolving world of technology, football has also been hit by the technology fever to improve its gameplay. The Video Assistant Review system and goal-line technology have already shown promise for improving the game in the past.</p>
+          <p class="lead mb-0"><button id="read-more2" type="submit" class="btn btn-secondary text-body-emphasis fw-bold">Continue reading...</button></p>
+            <p id="para2" class="hidden">The VAR, however, has also been heavily criticized for its time-consuming procedures and accuracy problems. FIFA is now revamping the VAR system and introducing the semi-automated offside technology – a move that could revolutionize the game. The technology made a successful debut in the FIFA Club World Cup. It will now be used in the 2022 UEFA Super Cup final and the 2022 UEFA Champions League group stage. It will also be used at the 2022 FIFA World Cup.
+
+FIFA to use the latest semi-automated offside in the upcoming FIFA World Cup 
+The latest semi-automated offside is set to feature in the upcoming FIFA World Cup in Qatar and the UEFA Super Cup. Speaking to the media. FIFA President Gianni Infantino said, “At the FIFA World Cup in 2018, FIFA took the brave step to use VAR technology on the world’s biggest stage, and it has proven to be an undisputable success.”
+
+He added, “Semi-automated offside technology is an evolution of the VAR systems that have been implemented across the world. This technology is the culmination of three years of dedicated research and testing to provide the very best for the teams, players and fans who will be heading to Qatar later this year. And FIFA is proud of this work, as we look forward to the world seeing the benefits of semi-automated offside technology at the FIFA World Cup 2022”. </p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+          <img src="https://i.pinimg.com/736x/17/bb/23/17bb2304716f9a293fe5680172b7d0e2.jpg" style="width:80%">
+          <h3 class="mb-0">Technology: Modern stadiums, modern solutions</h3>
+          <div class="mb-1 text-body-secondary">Oct 5</div>
+          <p class="mb-auto">Whereas sports venues were built historically to serve a single purpose, as technology transforms the live sports experience in modern times, the stadium has by definition become more than a physical asset. Venues are nowadays international destinations for rights holders. Through modernization, they shape local government policy and the development of social infrastructure. </p>
+          <p class="lead mb-0"><button id="read-more3" type="submit" class="btn btn-secondary text-body-emphasis fw-bold">Continue reading...</button></p>
+            <p id="para3" class="hidden">Sports venues of old are today being transformed into smart stadiums whereby new-generation technologies such as a mobile and 5G are used to enhance the fan experience. This includes a reduction in the number of physical touchpoints inside an arena, with many venues now going ticketless and cashless, and some also incorporating more environmentally friendly operations.
+
+Despite evidence younger generations prefer short-form sports content, the live event is still the industry’s most valuable commodity within a fragmented rights market.
+
+Keeping this in mind, as the digitalization of stadium infrastructure moves to enhance the fan experience, including the capacity for producing direct-to-consumer (D2C) broadcasts and second-screen content, the introduction of new in-stadia technologies is providing rights holders with new levels of data intelligence that help them to better understand what fans enjoy most during the live event. This, thereafter, helps the rights holder drive additional value via in-game activations and ecommerce campaigns customized to the fan.  
+
+For example, San Antonio Spurs’ AT&T Center moved to a cashless ecosystem as part of a multi-year partnership with mobile payment system Tappit signed in March 2021. Tappit’s service was merged with Spurs Pay, the National Basketball Association (NBA) franchise’s dedicated mobile app, which allows subscribers to make in-venue food, drinks, and merchandise purchases via their smartphones.
+
+“The digitalization of sporting arenas is changing the way rights holders communicate with their fans and stakeholders,” explains Omar Zerrad, N3XT Sports Senior Consultant, Digital Transformation. “As rights holders integrate data-based solutions into game-day operations, this is informing how traditional venues modernize their digital infrastructure and how new stadiums are being built from scratch.
+
+“This presents leagues and event organizers scope to reframe how the sporting arena is perceived and its purpose beyond sport. In the modern day of stadium development (and redevelopment), the sports arena serves communities in far more ways than it used to, providing stakeholders with a platform to innovate and bring digital solutions to mainstream audiences.
+
+“This can perhaps be demonstrated by Tottenham Hotspur’s ambitions to deliver net zero carbon matchday experiences at the Premier League club’s home stadium by leveraging sustainable transport and broadcast solutions (see examples below). In a new age of smart stadia, there are many ways technology can help drive value, reduce operational costs and emissions, while promoting advances in local infrastructure development that support people and their communities.”</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
